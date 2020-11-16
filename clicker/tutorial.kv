@@ -1,0 +1,28 @@
+<MyLayout>: # no need to import stuff in kv!
+    orientation:"vertical"
+    b1_w: mybutton1
+    b_w: mybutton
+    b2_w: mybutton2
+
+    Button:
+        id: mybutton1
+        size_hint: 1,0.8
+        font_size: 50
+        text: "  -  "
+        background_color: 0,0,255,255
+        on_press: root.Win1()
+    Button:
+        id: mybutton
+        size_hint: 1,0.8
+        font_size: 65
+        text: "  Go!  "
+        color: 0,0,0,1
+        background_color: 255,255,255,255
+        on_release: root.Clean()
+    Button:
+        id: mybutton2
+        size_hint: 1,0.8
+        font_size: 50
+        text: "  +  "
+        background_color: 255,0,0,255
+        on_press: root.Win2()

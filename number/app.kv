@@ -1,0 +1,37 @@
+<MyLayout>:
+    orientation:"vertical"
+    inp_txt: txtinp
+    label_w: mylabel
+    label_w1: mylabel1
+    label_w2: mylabel2
+    label_w3: mylabel3
+    Label:
+        id: mylabel
+        font_size: 20
+        multiline: True
+        text:'Enter a number with  " 7 " and without  " + "'
+    Label:
+        id: mylabel1
+        font_size: 20
+        multiline: True
+        text:""
+    Label:
+        id: mylabel2
+        font_size: 20
+        multiline: True
+        text:""
+    Label:
+        id: mylabel3
+        font_size: 20
+        multiline: True
+        text:""
+
+    TextInput:
+        id: txtinp
+        size_hint: 1,0.4
+        font_size: 25
+    Button:
+        size_hint: 1,0.4
+        font_size: 15
+        text: "Get info"
+        on_release: root.Deter()
